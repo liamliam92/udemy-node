@@ -1,4 +1,8 @@
 module.exports = (app) => {
+	let indexCtrl = require('../controllers/index');
+	
 	app.route('/')
-		.get((req, res) => res.render('../views/index', {mockDB: [1, 2, 3]}));
+		.get((req, res) => {
+			indexCtrl.listAllPosts(req, res);
+		});
 }

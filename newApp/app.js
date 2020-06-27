@@ -1,7 +1,7 @@
 // Modules
 const express = require('express');
 const pug = require('pug');
-//const db = require('./models/dbconnection');
+const db = require('./models/dbconnection');
 const app = express();
 const port = process.env.PORT || 3000;
 

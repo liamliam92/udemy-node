@@ -1,5 +1,7 @@
 include header.pug
 p This is the first line of text
 a(href='contact') here
-for indexs in mockDB
-	p= indexs
+each index in results
+	p= index.title
+	p= index.content
+	hr
